@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/perlin-landscape.gif">
+  <img src="./assets/perlin-landscape.gif" width="400px">
   <h1>Perlin Landscape</h1>
   
   <h3>Landscape created dynamically using Perlin noise.</h3>
@@ -29,14 +29,11 @@
 
 <p>A 3D landscape is created dynamically using the Perlin noise function of p5.js and <a href="https://github.com/spite/ccapture.js/">CCapture.js</a>.</p>
 
-<p><a href="">Processing</a></p>
-
-
 
 
 ## Screenshots
 
-<img src="./assets/perlin-landscape.png">
+<img src="./assets/perlin-landscape.png" width="600px">
 
 
 
