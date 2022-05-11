@@ -10,7 +10,9 @@ html, body {
 
 footer {
     position: absolute;
+    font-family: sans-serif;
     bottom: 0;
+    left: 0;
     mix-blend-mode: difference;
   }
   
