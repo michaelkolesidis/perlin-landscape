@@ -33,7 +33,7 @@
 
 ## Screenshots
 
-<img src="./assets/perlin-landscape.png" width="600px">
+<img src="./assets/perlin-landscape.png" width="700px">
 
 
 
