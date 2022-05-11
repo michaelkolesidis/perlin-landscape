@@ -31,7 +31,7 @@
 
 
 
-## Screenshots
+## Screenshot
 
 <img src="./assets/perlin-landscape.png" width="700px">
 
