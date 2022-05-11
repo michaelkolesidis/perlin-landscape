@@ -1,1 +1,1 @@
-# perlin-landscape
+# Perlin Landscape
