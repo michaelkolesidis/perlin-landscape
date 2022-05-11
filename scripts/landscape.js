@@ -59,6 +59,7 @@ function draw() {
     yOffset += noiseScale;
   }
 
+  smooth();
   background(0);
   rotateX(PI / 2.6);
   translate((-3 * width) / 4, -height / 2);
