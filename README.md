@@ -1,12 +1,12 @@
 <div align="center">
-  <img src="">
+  <img src="./assets/perlin-landscape.gif">
   <h1>Perlin Landscape</h1>
   
-  <h3></h3>
+  <h3>Landscape created dynamically using Perlin noise.</h3>
 
-  <a href=""><h3>Try me!</h3></a>
+  <a href="https://perlin-landscape.netlify.app/"><h3>Try me!</h3></a>
 
-  [![Netlify Status]()
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/230b9457-1953-46ba-be24-2eb1fd485983/deploy-status)](https://app.netlify.com/sites/perlin-landscape/deploys)
 
 </div>
   
@@ -27,21 +27,16 @@
 
 ## Description
 
-<p></p>
+<p>A 3D landscape is created dynamically using the Perlin noise function of p5.js and <a href="https://github.com/spite/ccapture.js/">CCapture.js</a>.</p>
 
 <p><a href="">Processing</a></p>
 
 
 
-## Demo
-
-<img src="">
-
-
 
 ## Screenshots
 
-<img src="">
+<img src="./assets/perlin-landscape.png">
 
 
 
