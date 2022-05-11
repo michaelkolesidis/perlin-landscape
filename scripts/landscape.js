@@ -33,7 +33,7 @@ function setup() {
   if (captureVideoFrames) {
     p5canvas = createCanvas(1920, 1080, WEBGL);
   } else {
-    p5canvas = createCanvas(windowWidth, windowHeight, WEBGL);
+    p5canvas = createCanvas(windowWidth, windowHeight - 2, WEBGL);
   }
 
   canv = p5canvas.canvas;
