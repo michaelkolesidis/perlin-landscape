@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/perlin-landscape.gif" width="400px">
+  <img src="./assets/perlin-landscape-01.gif" width="400px">
   <h1>Perlin Landscape</h1>
   
   <h3>Landscape created dynamically using Perlin noise.</h3>
