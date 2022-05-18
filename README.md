@@ -29,6 +29,8 @@
 
 <p>A 3D landscape is created dynamically using the Perlin noise function of p5.js and <a href="https://github.com/spite/ccapture.js/">CCapture.js</a>.</p>
 
+<p>Double-click anywhere to enter fullscreen mode, double-click again (or press ESC) to leave fullscreen mode.
+
 
 
 ## Screenshot
