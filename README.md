@@ -6,7 +6,7 @@
 
   <h4>landscape created dynamically using perlin noise.</h4>
 
-  <a href="https://perlin-landscape.netlify.app/">visit</a>
+  <h3><a href="https://perlin-landscape.netlify.app/">Visit</a></h3>
 </div>
   
   
