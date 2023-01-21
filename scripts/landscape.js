@@ -1,49 +1,29 @@
 /*
  * Copyright (c) 2022 Michael Kolesidis
- * MIT License
+ * GNU Affero General Public License v3.0
+ * https://www.gnu.org/licenses/gpl-3.0.html
  *
  */
 
+// Size
 let rows = 90;
-let columns = 160;
+let columns = 180;
 
+// Morphology
+let noiseScale = 0.06;
+let maxNoise = 200;
 let heights = [];
 
-let noiseScale = 0.06;
+// View
 let viewScale = 20;
-let noiseMax = 160;
 
-let captureVideoFrames = false;
-const MAXIMUM_VIDEO_FRAME_COUNT = 2500;
-let capturer;
-let canv;
-
-if (captureVideoFrames) {
-  capturer = new CCapture({
-    format: "png",
-    framerate: 25,
-    name: "perlinlandscapevid",
-    verbose: true,
-  });
-}
-
+// Setup
 function setup() {
-  let p5canvas;
-
-  if (captureVideoFrames) {
-    p5canvas = createCanvas(1920, 1080, WEBGL);
-  } else {
-    p5canvas = createCanvas(windowWidth, windowHeight, WEBGL);
-  }
-
-  canv = p5canvas.canvas;
-  frameRate(25);
-
-  if (captureVideoFrames) {
-    capturer.start();
-  }
+  let cnv = createCanvas(windowWidth, windowHeight, WEBGL);
+  frameRate(24);
 }
 
+// Draw
 function draw() {
   let yOffset = -frameCount / 10;
   for (var y = 0; y < rows; y++) {
@@ -53,46 +33,37 @@ function draw() {
         noise(x * noiseScale, yOffset),
         0,
         1,
-        -noiseMax,
-        noiseMax
+        -maxNoise,
+        maxNoise
       );
     }
     yOffset += noiseScale;
   }
 
   smooth();
-  background(0);
-  rotateX(PI / 2.6);
-  translate((-3 * width) / 4, -height / 2);
+  rotateX(PI / 2.5); // angle
+  translate((-3 * width) / 4, -height / 2); // position
 
-  strokeWeight(1.5);
-  stroke(255);
+  background(20);
+  strokeWeight(2.0);
+  stroke(235);
 
   for (var y = 0; y < rows - 1; y++) {
-    beginShape(QUADS); // alternatively use TRIANGLE_STRIP
+    beginShape(QUADS);
     for (var x = 0; x < columns; x++) {
       vertex(x * viewScale, y * viewScale, heights[y][x]);
       vertex(x * viewScale, (y + 1) * viewScale, heights[y + 1][x]);
     }
     endShape();
   }
-
-  if (captureVideoFrames) {
-    capturer.capture(canv);
-  }
-
-  if (captureVideoFrames && frameCount == MAXIMUM_VIDEO_FRAME_COUNT) {
-    noLoop();
-    capturer.stop();
-    capturer.save();
-  }
 }
 
+// Resize
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
 
-// Fullscreen mode
+// Fullscreen
 window.addEventListener("dblclick", () => {
   const fullscreenElement =
     document.fullscreenElement || document.webkitFullscreenElement;
