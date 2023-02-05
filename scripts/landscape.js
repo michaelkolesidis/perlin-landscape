@@ -46,7 +46,7 @@ function draw() {
 
   background(20);
   strokeWeight(2.0);
-  stroke(235);
+  stroke(199, 154, 115);
 
   for (var y = 0; y < rows - 1; y++) {
     beginShape(QUADS);

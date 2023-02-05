@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/perlin-landscape-01.gif" width="400px">
+  <img src="./assets/pl_screencast.gif" width="400px">
   <h1>perlin landscape</h1>
   
   [![Netlify Status](https://api.netlify.com/api/v1/badges/230b9457-1953-46ba-be24-2eb1fd485983/deploy-status)](https://app.netlify.com/sites/perlin-landscape/deploys)
@@ -34,7 +34,7 @@ Double-click anywhere to enter fullscreen mode, double-click again (or press ESC
 
 ## Screenshot
 
-<img src="./assets/perlin-landscape.png" width="700px">
+<img src="./assets/pl_screenshot.png" width="700px">
 
 
 
