@@ -8,8 +8,7 @@
 
   <h3><a href="https://perlin-landscape.netlify.app/">Visit</a></h3>
 </div>
-  
-  
+
 
 ## Technologies Used
 
@@ -22,21 +21,15 @@
 <img src="https://github.com/michaelkolesidis/tech-icons/blob/main/icons/html5/html5-plain.svg" height="50px" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-
-
 ## Description
 
 A 3D landscape is created dynamically using the Perlin noise function of p5.js.
 
 Double-click anywhere to enter fullscreen mode, double-click again (or press ESC) to leave fullscreen mode.
 
-
-
 ## Screenshot
 
 <img src="./assets/pl_screenshot.png" width="700px">
-
-
 
 ## License
 
