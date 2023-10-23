@@ -30,7 +30,7 @@ Double-click anywhere to enter fullscreen mode, double-click again (or press ESC
 
 ## Screenshot
 
-![Perlin Landscape Screenshot]("./assets/perlin.png")
+![Perlin Landscape Screenshot](./assets/perlin.png)
 
 ## License
 
