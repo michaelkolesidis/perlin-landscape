@@ -5,6 +5,9 @@
  *
  */
 
+// Canvas
+let cnv;
+
 // Size
 let rows = 90;
 let columns = 180;
@@ -17,10 +20,20 @@ let heights = [];
 // View
 let viewScale = 20;
 
+// Colorpicker
+let colorPicker;
+
 // Setup
 function setup() {
-  let cnv = createCanvas(windowWidth, windowHeight, WEBGL);
+  cnv = createCanvas(windowWidth, windowHeight, WEBGL);
   frameRate(24);
+  colorPicker = createColorPicker('rgb(250, 250, 250)');
+  colorPicker.position(windowWidth - 50, 16);
+  colorPicker.style("height", "30px");
+  colorPicker.style("width", "30px");
+  colorPicker.style("padding", "0 2px");
+  colorPicker.style("background-color", "#f5f5f5");
+  colorPicker.style("cursor", "pointer");
 }
 
 // Draw
@@ -45,8 +58,8 @@ function draw() {
   translate((-3 * width) / 4, -height / 2); // position
 
   background(20);
-  strokeWeight(2.0);
-  stroke(199, 154, 115);
+  strokeWeight(1);
+  stroke(colorPicker.color());
 
   for (var y = 0; y < rows - 1; y++) {
     beginShape(QUADS);
@@ -61,6 +74,7 @@ function draw() {
 // Resize
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
+  colorPicker.position(windowWidth - 50, 16);
 }
 
 // Fullscreen

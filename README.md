@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/pl_screencast.gif" width="400px">
+  <img src="./assets/perlin.gif" width="400px">
   <h1>perlin landscape</h1>
   
   [![Netlify Status](https://api.netlify.com/api/v1/badges/230b9457-1953-46ba-be24-2eb1fd485983/deploy-status)](https://app.netlify.com/sites/perlin-landscape/deploys)
@@ -8,7 +8,6 @@
 
   <h3><a href="https://perlin-landscape.netlify.app/">Visit</a></h3>
 </div>
-
 
 ## Technologies Used
 
@@ -25,11 +24,13 @@
 
 A 3D landscape is created dynamically using the Perlin noise function of p5.js.
 
+The color of the landscape can by modified using the color picker on the top-right corner.
+
 Double-click anywhere to enter fullscreen mode, double-click again (or press ESC) to leave fullscreen mode.
 
 ## Screenshot
 
-<img src="./assets/pl_screenshot.png" width="700px">
+![Perlin Landscape Screenshot]("./assets/perlin.png")
 
 ## License
 
