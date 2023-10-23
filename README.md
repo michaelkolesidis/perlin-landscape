@@ -4,7 +4,7 @@
   
   [![Netlify Status](https://api.netlify.com/api/v1/badges/230b9457-1953-46ba-be24-2eb1fd485983/deploy-status)](https://app.netlify.com/sites/perlin-landscape/deploys)
 
-  <h4>landscape created dynamically using perlin noise.</h4>
+  <h4>landscape created dynamically using perlin noise</h4>
 
   <h3><a href="https://perlin-landscape.netlify.app/">Visit</a></h3>
 </div>
@@ -30,17 +30,17 @@ Double-click anywhere to enter fullscreen mode, double-click again (or press ESC
 
 ## Screenshot
 
-![Perlin Landscape Screenshot]("./assets/perlin_01.png")
+![Perlin Landscape Screenshot](./assets/perlin_01.png)
 
-![Perlin Landscape Screenshot]("./assets/perlin_02.png")
+![Perlin Landscape Screenshot](./assets/perlin_02.png)
 
-![Perlin Landscape Screenshot]("./assets/perlin_03.png")
+![Perlin Landscape Screenshot](./assets/perlin_03.png)
 
-![Perlin Landscape Screenshot]("./assets/perlin_04.png")
+![Perlin Landscape Screenshot](./assets/perlin_04.png)
 
 ## License
 
-<a href="https://www.gnu.org/licenses/agpl-3.0.html"><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/AGPLv3_Logo.svg" height="100px" /></a>
+<a href="https://www.gnu.org/licenses/agpl-3.0.html"><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/AGPLv3_Logo.svg" height="90px" /></a>
 
 Copyright (c) 2024 Michael Kolesidis<br>
 Licensed under the [GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0.html).
