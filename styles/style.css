@@ -10,7 +10,7 @@
 
 html,
 body {
-  background-color: rgb(20, 20, 20);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 h1 {
@@ -39,12 +39,12 @@ p {
 
 @media (max-width: 480px) {
   p {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     margin: 0.5rem;
   }
 
   a,
   a:visited {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 }

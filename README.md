@@ -24,17 +24,23 @@
 
 A 3D landscape is created dynamically using the Perlin noise function of p5.js.
 
-The color of the landscape can by modified using the color picker on the top-right corner.
+The colors of the background and the landscape can by modified using the color pickers on the top-right corner.
 
 Double-click anywhere to enter fullscreen mode, double-click again (or press ESC) to leave fullscreen mode.
 
 ## Screenshot
 
-![Perlin Landscape Screenshot]("./assets/perlin.png")
+![Perlin Landscape Screenshot]("./assets/perlin_01.png")
+
+![Perlin Landscape Screenshot]("./assets/perlin_02.png")
+
+![Perlin Landscape Screenshot]("./assets/perlin_03.png")
+
+![Perlin Landscape Screenshot]("./assets/perlin_04.png")
 
 ## License
 
 <a href="https://www.gnu.org/licenses/agpl-3.0.html"><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/AGPLv3_Logo.svg" height="100px" /></a>
 
-Copyright (c) 2023 Michael Kolesidis<br>
+Copyright (c) 2024 Michael Kolesidis<br>
 Licensed under the [GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0.html).

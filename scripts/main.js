@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2023 Michael Kolesidis
+ * Copyright (c) 2024 Michael Kolesidis
  * GNU Affero General Public License v3.0
  * https://www.gnu.org/licenses/gpl-3.0.html
  *
@@ -21,19 +21,17 @@ let heights = [];
 let viewScale = 20;
 
 // Colorpicker
-let colorPicker;
+let colorPickerLandScape;
+let colorPickerBackground;
 
 // Setup
 function setup() {
   cnv = createCanvas(windowWidth, windowHeight, WEBGL);
   frameRate(24);
-  colorPicker = createColorPicker('rgb(250, 250, 250)');
-  colorPicker.position(windowWidth - 50, 16);
-  colorPicker.style("height", "30px");
-  colorPicker.style("width", "30px");
-  colorPicker.style("padding", "0 2px");
-  colorPicker.style("background-color", "#f5f5f5");
-  colorPicker.style("cursor", "pointer");
+  colorPickerLandScape = createColorPicker('rgb(250, 250, 250)');
+  setColorPickerStyle(colorPickerLandScape, 90)
+  colorPickerBackground = createColorPicker('rgb(20, 20, 20)');
+  setColorPickerStyle(colorPickerBackground, 45)
 }
 
 // Draw
@@ -57,9 +55,9 @@ function draw() {
   rotateX(PI / 2.5); // angle
   translate((-3 * width) / 4, -height / 2); // position
 
-  background(20);
+  background(colorPickerBackground.color());
   strokeWeight(1);
-  stroke(colorPicker.color());
+  stroke(colorPickerLandScape.color());
 
   for (var y = 0; y < rows - 1; y++) {
     beginShape(QUADS);
@@ -74,7 +72,9 @@ function draw() {
 // Resize
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
-  colorPicker.position(windowWidth - 50, 16);
+  colorPickerLandScape.position(windowWidth - 95, 16);
+  colorPickerBackground.position(windowWidth - 50, 16);
+
 }
 
 // Fullscreen
@@ -96,3 +96,13 @@ window.addEventListener("dblclick", () => {
     }
   }
 });
+
+// Set color picker style
+function setColorPickerStyle(colorPicker, positionX) {
+  colorPicker.position(windowWidth - positionX, 16);
+  colorPicker.style("height", "30px");
+  colorPicker.style("width", "30px");
+  colorPicker.style("padding", "0 2px");
+  colorPicker.style("background-color", "#f5f5f5");
+  colorPicker.style("cursor", "pointer");
+}
